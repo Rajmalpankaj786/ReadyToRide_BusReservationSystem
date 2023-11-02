@@ -23,7 +23,7 @@
   }
   
   nav img{
-    width: 60px;
+    width: 150px;
     height: 30%;
   
     
@@ -52,7 +52,7 @@
   .cs-ad{
     display: flex;
     justify-content: space-between;
-    margin-left: 100px;
+    margin-left: 700px;
     
   }
   
@@ -73,18 +73,43 @@
   .dd-su{
     position: absolute;
     width: 200px;
-    height: 180px;
-    border: 2px solid rgb(195, 121, 31);
-    background-color: rgb(25, 25, 29);
+    height: 190px;
+    /* border: 2px solid rgb(195, 121, 31); */
+    /* background-color: rgb(42, 45, 48); */
+    box-shadow: inset -2px 2px 2px white;
     /* background-color: red; */
-    /* display: none; */
+    display: none;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    /* transition: .8s; */
   }
-  .dd-su .in-dd-su{
-    border: 1px solid rgb(25, 0, 255);
+  .in-dd-su{
+    /* border: 1px solid rgb(25, 0, 255); */
     width: 160px;
-    height: 120px;
-    margin: auto;
+    height: 160px;
+    margin: 15px auto;
+    background-color: rgb(42, 45, 48);
 
+
+  }
+  .in-dd-su p{
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .in-dd-su a{
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 5px;
+    /* background-color: #fff; */
+    /* color: black; */
+    color: red;
+    background-color: #a06a08;
+    
+  }
+  .in-dd-su div{
+    width: 140px;
+    margin:10px auto;
+    border-bottom: 1px solid #fff;
   }
 /* .nav-links ul li{
   /* display: block; */
@@ -98,6 +123,8 @@
 }
 .dd-me :hover .dd-su{
   display: block;
+  transition-duration: 5s;
+  transform-style: unset;
 }
 
   
