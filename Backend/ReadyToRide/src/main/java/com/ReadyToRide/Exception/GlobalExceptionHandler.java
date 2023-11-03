@@ -31,4 +31,50 @@ public class GlobalExceptionHandler {
 		return new ResponseEntity<MyErrorDetails>(red, HttpStatus.BAD_REQUEST);
 	}
 	
+	
+	@ExceptionHandler(ReservationException.class)
+	public ResponseEntity<MyErrorDetails> reservationException(ReservationException be, WebRequest webReq){
+		
+		MyErrorDetails red = new MyErrorDetails();
+		red.setTimestamp(LocalDateTime.now());
+		red.setMessage(be.getMessage());
+		red.setDetails(webReq.getDescription(false));
+		
+		return new ResponseEntity<MyErrorDetails>(red, HttpStatus.BAD_REQUEST);
+	}
+	
+
+	@ExceptionHandler(LoginException.class)
+	public ResponseEntity<MyErrorDetails> loginException(LoginException be, WebRequest webReq){
+		
+		MyErrorDetails red = new MyErrorDetails();
+		red.setTimestamp(LocalDateTime.now());
+		red.setMessage(be.getMessage());
+		red.setDetails(webReq.getDescription(false));
+		
+		return new ResponseEntity<MyErrorDetails>(red, HttpStatus.BAD_REQUEST);
+	}
+	
+	@ExceptionHandler(RouteException.class)
+	public ResponseEntity<MyErrorDetails> routeException(RouteException be, WebRequest webReq){
+		
+		MyErrorDetails red = new MyErrorDetails();
+		red.setTimestamp(LocalDateTime.now());
+		red.setMessage(be.getMessage());
+		red.setDetails(webReq.getDescription(false));
+		
+		return new ResponseEntity<MyErrorDetails>(red, HttpStatus.BAD_REQUEST);
+	}
+	
+//	@ExceptionHandler(UserException.class)
+//	public ResponseEntity<MyErrorDetails> userException(UserException be, WebRequest webReq){
+//		
+//		MyErrorDetails red = new MyErrorDetails();
+//		red.setTimestamp(LocalDateTime.now());
+//		red.setMessage(be.getMessage());
+//		red.setDetails(webReq.getDescription(false));
+//		
+//		return new ResponseEntity<MyErrorDetails>(red, HttpStatus.BAD_REQUEST);
+//	}
+	
 }
