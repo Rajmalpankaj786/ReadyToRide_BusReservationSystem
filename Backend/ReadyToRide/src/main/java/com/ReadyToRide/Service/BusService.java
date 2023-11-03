@@ -124,4 +124,30 @@ public class BusService {
 			throw new UserException("Unauthorized Access! Only Admin can make changes");
 
 	}
+	public Bus deleteBus(Integer busId, String key) throws BusException, UserException {
+
+		CUSession loggedInUser = srepo.findByUuid(key);
+
+//		If user not logged in throw User Exception
+		if (loggedInUser == null) {
+			throw new UserException("Please provide a valid key to delete Bus");
+		}
+		if (loggedInUser.getType().equalsIgnoreCase("Admin")) {
+//			optional is used to handle null pointer exception
+			Optional<Bus> opt = busdao.findById(busId);
+			if (opt.isPresent()) {
+				Bus exbus = opt.get();
+
+				if (exbus.getAvailableSeats() != exbus.getSeats())
+					throw new BusException("Cannot delete Bus already scheduled");
+
+				busdao.delete(exbus);
+				return exbus;
+			}
+
+			throw new BusException("bus doesn't exists with this " + busId + " id");
+		} else
+			throw new UserException("Unauthorized Access! Only Admin can delete Bus");
+
+	}
 }
