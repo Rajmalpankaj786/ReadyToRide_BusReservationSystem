@@ -44,8 +44,8 @@ public class BusService {
 		if (loggedInUser.getType().equalsIgnoreCase("Admin")) {
 //			finding route is present or not
 			Route route = rrepo.findByRouteFromAndRouteTo(bus.getRouteFrom(), bus.getRouteTo());
-			System.out.println(bus);
-			System.out.println(route);
+//			System.out.println(bus);
+//			System.out.println(route);
 			if (route != null) {
 //				if contains bus with same details throw bus exception
 				if (route.getBuslist().contains(bus)) {
@@ -77,8 +77,8 @@ public class BusService {
 			if (opt.isPresent()) {
 				Bus curr = opt.get();
 	
-				if (curr.getAvailableSeats() != curr.getSeats())
-					throw new BusException("Cannot update Bus already scheduled");
+//				if (curr.getAvailableSeats() != curr.getSeats())
+//					throw new BusException("Cannot update Bus already scheduled");
 
 				Route route = rrepo.findByRouteFromAndRouteTo(curr.getRouteFrom(), curr.getRouteTo());
 
