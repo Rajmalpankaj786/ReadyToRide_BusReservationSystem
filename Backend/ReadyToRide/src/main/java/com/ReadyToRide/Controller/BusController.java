@@ -72,4 +72,23 @@ public class BusController {
 		return new ResponseEntity<Bus>(busById,HttpStatus.FOUND);
 		
 	}
+	@GetMapping("/viewBusByType/{busType}")
+	public ResponseEntity<List<Bus>> viewBusByTypeHandler(@PathVariable("busType") String busType,@RequestParam String key) throws BusException, UserException{
+		
+		List<Bus> busByType = busService.viewBusByType(busType,key);
+		
+		return new ResponseEntity<List<Bus>>(busByType,HttpStatus.FOUND);
+		
+	}
+	
+//	Getting  all bus details by providing authorization key
+	
+	@GetMapping("/viewAllBus")
+	public ResponseEntity<List<Bus>> viewAllBusHandler(@RequestParam String key) throws BusException, UserException{
+		
+		List<Bus> viewAllBus = busService.viewAllBus(key);
+		
+		return new ResponseEntity<List<Bus>>(viewAllBus,HttpStatus.OK);
+		
+	}
 	}
