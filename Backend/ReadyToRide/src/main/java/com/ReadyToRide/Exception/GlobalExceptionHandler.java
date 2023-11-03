@@ -66,8 +66,8 @@ public class GlobalExceptionHandler {
 		return new ResponseEntity<MyErrorDetails>(red, HttpStatus.BAD_REQUEST);
 	}
 	
-//	@ExceptionHandler(UserException.class)
-//	public ResponseEntity<MyErrorDetails> userException(UserException be, WebRequest webReq){
+//	@ExceptionHandler(FeedbackException.class)
+//	public ResponseEntity<MyErrorDetails> feedbackException(FeedbackException be, WebRequest webReq){
 //		
 //		MyErrorDetails red = new MyErrorDetails();
 //		red.setTimestamp(LocalDateTime.now());
@@ -76,5 +76,7 @@ public class GlobalExceptionHandler {
 //		
 //		return new ResponseEntity<MyErrorDetails>(red, HttpStatus.BAD_REQUEST);
 //	}
+	
+	
 	
 }
