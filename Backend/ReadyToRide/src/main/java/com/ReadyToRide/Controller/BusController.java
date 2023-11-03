@@ -48,4 +48,13 @@ public class BusController {
 		return new ResponseEntity<Bus>(savedBus,HttpStatus.CREATED);
 		
 	}
+	
+	@PutMapping("/update")
+	public ResponseEntity<Bus> updateBusHandler(@RequestBody Bus bus,@RequestParam String key)throws BusException, UserException{
+		
+		Bus updatedBus = busService.updateBus(bus,key);
+		
+		return new ResponseEntity<Bus>(updatedBus,HttpStatus.ACCEPTED);
+		
+	}
 	}
