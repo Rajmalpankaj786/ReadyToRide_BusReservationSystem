@@ -150,4 +150,55 @@ public class BusService {
 			throw new UserException("Unauthorized Access! Only Admin can delete Bus");
 
 	}
+	public Bus viewBus(Integer busId, String key) throws BusException, UserException {
+
+		CUSession loggedInUser = srepo.findByUuid(key);
+
+
+		if (loggedInUser == null) {
+			throw new UserException("Please provide a valid key to view bus");
+		}
+		Optional<Bus> opt = busdao.findById(busId);
+		if (opt.isPresent()) {
+			Bus exbus = opt.get();
+
+			return exbus;
+		}
+		throw new BusException("Bus doesn't exists with this " + busId + " id");
+	}
+
+	public List<Bus> viewBusByType(String busType, String key) throws BusException, UserException {
+		CUSession loggedInUser = srepo.findByUuid(key);
+
+//	If user not logged in throw User Exception
+		if (loggedInUser == null) {
+			throw new UserException("Please provide a valid key to view buses");
+		}
+
+//		finding list of bus by bus type
+		List<Bus> bList = busdao.findByBusType(busType);
+
+		if (bList.size() == 0) {
+			throw new BusException("bus list is empty");
+		}
+
+		return bList;
+	}
+
+	
+	public List<Bus> viewAllBus(String key) throws BusException, UserException {
+		CUSession loggedInUser = srepo.findByUuid(key);
+
+		if (loggedInUser == null) {
+			throw new UserException("Please provide a valid key to view buses");
+		}
+
+		List<Bus> buslist = busdao.findAll();
+
+		if (buslist.size() == 0) {
+			throw new BusException("bus list is empty");
+		}
+		return buslist;
+
+	}
 }
