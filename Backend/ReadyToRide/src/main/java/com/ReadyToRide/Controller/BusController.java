@@ -64,4 +64,12 @@ public class BusController {
 		
 		return new ResponseEntity<Bus>(deletedBus,HttpStatus.OK);
 	}
+	@GetMapping("/view/{busId}")
+	public ResponseEntity<Bus> viewBusHandler(@PathVariable("busId") Integer busId,@RequestParam String key) throws BusException, UserException{
+		
+		Bus busById = busService.viewBus(busId,key);
+		
+		return new ResponseEntity<Bus>(busById,HttpStatus.FOUND);
+		
+	}
 	}
