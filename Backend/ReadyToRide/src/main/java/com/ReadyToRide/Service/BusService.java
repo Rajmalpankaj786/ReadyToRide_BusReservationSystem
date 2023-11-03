@@ -64,4 +64,64 @@ public class BusService {
 
 	}
 
+	public Bus updateBus(Bus bus, String key) throws BusException, UserException {
+
+		CUSession loggedInUser = srepo.findByUuid(key);
+
+
+		if (loggedInUser == null) {
+			throw new UserException("Please provide a valid key to update Bus");
+		}
+		if (loggedInUser.getType().equalsIgnoreCase("Admin")) {
+			Optional<Bus> opt = busdao.findById(bus.getBusId());
+			if (opt.isPresent()) {
+				Bus curr = opt.get();
+	
+				if (curr.getAvailableSeats() != curr.getSeats())
+					throw new BusException("Cannot update Bus already scheduled");
+
+				Route route = rrepo.findByRouteFromAndRouteTo(curr.getRouteFrom(), curr.getRouteTo());
+
+				if (bus.getRouteFrom() != null && bus.getRouteTo() != null) {
+					route = rrepo.findByRouteFromAndRouteTo(bus.getRouteFrom(), bus.getRouteTo());
+
+//		if route not found it will throw bus exception			
+					if (route == null)
+						throw new BusException("Invalid route details");
+				}
+//		setting details	
+				if (bus.getArrivalTime() != null)
+					curr.setArrivalTime(bus.getArrivalTime());
+//				curr.setArrivalTime(bus.getArrivalTime().toString());
+				if (bus.getAvailableSeats() != null)
+					curr.setAvailableSeats(bus.getAvailableSeats());
+				if (bus.getBusName() != null)
+					curr.setBusName(bus.getBusName());
+				if (bus.getBusType() != null)
+					curr.setBusType(bus.getBusType());
+				if (bus.getDepartureTime() != null)
+					curr.setDepartureTime(bus.getDepartureTime());
+				if (bus.getDriverName() != null)
+					curr.setDriverName(bus.getDriverName());
+				if (bus.getRouteFrom() != null)
+					curr.setRouteFrom(bus.getRouteFrom());
+				if (bus.getRouteTo() != null)
+					curr.setRouteTo(bus.getRouteTo());
+				if (bus.getSeats() != null)
+					curr.setSeats(bus.getSeats());
+
+//			save updated bus 	
+				Bus updated = busdao.save(curr);
+				route.getBuslist().add(updated);
+				route.getBuslist().remove(bus);
+
+				return updated;
+
+			}
+			throw new BusException("Bus with id " + bus.getBusId() + "does not exist");
+
+		} else
+			throw new UserException("Unauthorized Access! Only Admin can make changes");
+
+	}
 }
