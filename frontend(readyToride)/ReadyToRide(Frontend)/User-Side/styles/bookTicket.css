@@ -1,0 +1,149 @@
+.book-ticket-search-container{
+    width: 80%;
+    margin: 60px auto;
+    box-shadow: 0px 3px 8px rgba(12, 12, 228, 0.766);
+    padding: 30px;
+    border-radius: 10px;
+}
+#search-ticket-form{
+  display: flex;
+}
+#search-ticket-form input[type="text"],
+#search-ticket-form input[type="date"] {
+  border: 2px solid #8c27e4e1;
+  height: 25px;
+  font-size: 16px;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  margin: 5px;
+  width: 25%;
+}
+#search-ticket-form input[type="submit"] {
+    background-color: rgba(68, 28, 189, 0.762);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    height: 46px;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 20%;
+    margin-top: 5px;
+  }
+  #search-ticket-form input[type="submit"]:hover {
+    background-color: rgba(68, 28, 189, 0.762);
+  }
+
+  .book-ticket-display-container{
+    min-height: 60vh;
+  }
+
+  #book-heading{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #7557b8 0px 3px 8px;
+  
+  }
+
+  .bus-details-contaner{
+    display: flex;
+    width: 60%;
+    margin: 60px auto;
+    box-shadow: 0px 3px 8px rgba(12, 12, 228, 0.766);
+    padding: 30px 40px;
+    border-radius: 10px;
+    justify-content: space-between;
+  }
+
+  .travels-name > h3{
+    font-size: 24px;
+  }
+  .travels-name > p{
+    color: rgba(68, 28, 189, 0.762);
+    font-size: 18px;
+  }
+
+  .bus-time{
+    padding: 10px;
+    line-height: 26px;
+  }
+  #bus-timing-table thead{
+    font-size: 22px;
+  }
+  #bus-timing-table td{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #bus-timing-table td:nth-child(2){
+    color:rgba(68, 28, 189, 0.762);
+    font-size: 22px;
+  }
+  .ticket-price-details > h2{
+    font-size: 20px;
+  }
+  #book-ticket{
+    color: white;
+    background-color:rgba(68, 28, 189, 0.762);
+    border: none;
+    width: 140px;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+  }
+  #book-ticket:hover{
+    cursor: pointer;
+    background-color: rgba(68, 28, 189, 0.762);
+  }
+
+  @media screen and (max-width: 800px) {
+    .book-ticket-search-container{
+      width: 70%;
+    }
+    #book-heading{
+      font-size: 18px;
+    }
+    #search-ticket-form{
+      display: block;
+    }
+    #search-ticket-form input[type="text"],
+    #search-ticket-form input[type="date"], 
+    #search-ticket-form input[type="submit"] {
+      display: block;
+      width: 90%;
+      margin: 16px auto;
+    }
+    .bus-details-contaner{
+      display: block;
+    }
+    .travels-name > p{
+      color: rgba(68, 28, 189, 0.762);
+      font-size: 16px;
+      margin-top: -15px;
+    }
+    #bus-timing-table thead{
+      font-size: 22px;
+    }
+    #bus-timing-table td{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    #bus-timing-table{
+      margin-left: -15px;
+    }
+    #bus-timing-table td:nth-child(2){
+      color: rgba(68, 28, 189, 0.762);
+      font-size: 22px;
+    }
+    #book-ticket{
+      width: 80%;
+      margin-top: 20px;
+    }
+  }

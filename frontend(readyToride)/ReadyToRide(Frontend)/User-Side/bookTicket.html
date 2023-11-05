@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Css from FontAwesome for Amenities -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Website External Css Link -->
+  <link rel="stylesheet" href="./styles/headerFooter.css">
+  <link rel="stylesheet" href="./styles/bookTicket.css">
+  <title>Home -Book My Bus</title>
+</head>
+<body>
+    <!-- Navbar Starts -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="./images/Book_My_Bus_Logo.png" alt="Logo">
+    </div>
+    <div class="menu" id="menu">
+      <ul>
+        <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Services</a>
+          <ul class="dropdown-content dropdown-toggle">
+            <li><a href="./bookTicket.html">Book a Ticket</a></li>
+            <li><a href="./bookTicket.html">Find Bus</a></li>
+            <li><a href="./ticketStatus.html">Ticket Status</a></li>
+            <li><a href="./cancelTicket.html">Cancel Ticket</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./login.html">Account</a></li>
+      </ul>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!-- Navbar Ends -->
+
+<div class="book-ticket-search-container">
+    <form action="" id="search-ticket-form">
+        <input type="text" placeholder="From City" required>
+        <input type="text" placeholder="To City" required>
+        <input type="date" id="departue-date" min="" required>
+        <input type="submit" value="Find Bus">
+    </form>
+</div>
+
+<div class="book-ticket-display-container">
+    <h2 id="book-heading">Please select your route and journey date to find bus.</h2>
+    <div id="fetched-bus-container">
+    </div>
+</div>
+
+
+
+
+
+  <!-- footer -->
+  <div class="footer-top">
+    <div class="container">
+        <div class="row footer-wrapper gy-sm-5 gy-4">
+            <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
+                <div class="footer-widget">
+                    <div class="footer-logo">
+                        <img class="aei" src="./images/Book_My_Bus_Logo.png" alt="Logo">
+                    </div>
+                    <p>We make it possible for you to buy tickets with its large network of trustworthy bus partners ! <br>As humans, we have the urge to explore By travelling you can be closer to the people you love.!</p>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                <div class="footer-widget">
+                    <h4 class="widget-title">Useful Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="">About</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                <div class="footer-widget">
+                    <h4 class="widget-title">Policies</h4>
+                    <ul class="footer-links">
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Ticket Policies</a></li>
+                        <li><a href="">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                <div class="footer-widget">
+                    <h4 class="widget-title">Contact Info</h4>
+                      <ul class="footer-contacts">
+                        <li> <i class="las la-map-pin"></i> My Bus Office ,Kolkata</li>
+                        <li>  <i class="las la-phone-volume"></i> <a href="">1234567890</a></li>
+                        <li> <i class="las la-envelope"></i> <a href=""> <span class="_cf_email_" data-cfemail="">bookmybus.com</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End of Footer  -->
+
+
+
+  <!-- Java Script -->
+  <script type="text/javascript" src="./scripts/bookTicket.js"></script>
+  <script type="text/javascript" src="./scripts/headerFooter.js"></script>
+</body>
+</html>

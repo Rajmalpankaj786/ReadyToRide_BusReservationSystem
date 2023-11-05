@@ -1,0 +1,81 @@
+/* Reset some default styles to ensure consistency across browsers */
+/* Style the form heading */
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style form labels */
+label {
+    display: block;
+    font-weight: 500;
+}
+
+/* Style form inputs and text area */
+input[type="number"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgba(68, 28, 189, 0.762);
+    border-radius: 4px;
+    resize: none;
+}
+
+/* Style form validation error messages */
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+/* Style form submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgba(68, 28, 189, 0.762);
+    border-radius: 4px;
+    resize: none;
+}
+
+#busid{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgba(68, 28, 189, 0.762);
+    border-radius: 4px;
+    resize: none;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(68, 28, 189, 0.762);
+}
+
+/* Style the form container */
+form {
+    display: grid;
+}
+
+/* Apply media query for better responsiveness */
+@media (max-width: 480px) {
+    /* Adjust form layout for smaller screens */
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    /* Increase font size for better readability on small screens */
+    h2 {
+        font-size: 24px;
+    }
+
+    /* Adjust input and textarea padding */
+    input[type="number"],
+    input[type="text"],
+    textarea {
+        padding: 8px;
+    }
+
+    /* Adjust submit button padding */
+    input[type="submit"] {
+        padding: 10px 15px;
+    }
+}

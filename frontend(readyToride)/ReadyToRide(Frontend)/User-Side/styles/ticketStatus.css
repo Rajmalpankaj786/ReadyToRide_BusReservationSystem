@@ -1,0 +1,145 @@
+.ticket-search-container{
+    width: 60%;
+    margin: 60px auto;
+    box-shadow: 0px 3px 8px rgba(68, 28, 189, 0.762);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.search-ticket{
+    width: 70%;
+    height: 40px;
+}
+#search-ticket-id{
+    width: 98%;
+    height: 50%;
+    border-radius: 10px;
+    border: 2px solidrgba(68, 28, 189, 0.762);
+    outline: 0;
+    font-size: 18px;
+    padding: 10px;
+}
+input::placeholder {
+    color: rgb(159, 157, 157); /* Placeholder color you want */
+  }
+.search-button{
+    width: 25%;
+    height: 40px;
+}
+#search-ticket-button{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(68, 28, 189, 0.762);
+    color: white;
+    font-size: 18px;
+}
+#search-ticket-button:hover{
+    background-color: rgba(68, 28, 189, 0.762);
+}
+
+.ticket-details{
+    width: 90%;
+    margin: 40px auto;
+    min-height: 80vh;
+}
+
+.ticket-details > h1{
+    text-align: center;
+}
+
+table {
+    width: 60%;
+    margin: 40px auto;
+    padding: 10px;
+    box-shadow: 0px 3px 8px rgba(14, 158, 77, 0.24);
+    border-radius: 10px;
+    background-color:rgba(68, 28, 189, 0.762);
+    font-size: 18px;
+    font-weight: bold;
+}
+#ticket-table{
+    visibility: hidden;
+}
+
+th{
+    border-right: 1px solid yellow;
+    width: 40%;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid yellow;
+}
+
+#cancel-or-download-ticket{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    visibility: hidden;
+}
+#cancel-or-download-ticket > button{
+    width: 20%;
+    height: 40px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: red;
+    margin-left: 10px;
+}
+#cancel-or-download-ticket >  button:nth-child(1){
+    background-color: #3498db;
+}
+.cancel-ticket-container{
+    margin: 20vh auto 40vh;
+}
+
+@media screen and (max-width: 800px) {
+    .ticket-search-container{
+        display: block;
+    }
+    .search-ticket{
+        width: 80%;
+        margin: auto;
+    }
+    .search-button{
+        width: 40%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    table{
+        width: 90%;
+        font-size: 14px;
+    }
+    #cancel-or-download-ticket{
+        width: 90%;
+    }
+    #cancel-or-download-ticket > button{
+        width: 30%;
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .ticket-search-container{
+        display: block;
+    }
+    .search-ticket{
+        width: 90%;
+        margin: auto;
+    }
+    .search-button{
+        width: 60%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+}

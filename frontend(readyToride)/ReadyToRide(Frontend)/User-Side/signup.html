@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="./styles/signup.css" />
+    </head>
+
+    <body>
+        <!-- The custom alert dialog -->
+        <div class="custom-alert" id="customAlert">
+            <div class="custom-alert-content">
+                <p id="customAlertMessage"></p>
+            </div>
+        </div>
+
+        <div id="customToastContainer"></div>
+        <!-- Account Section Starts Here -->
+        <section
+            class="account-section bg_img"
+            style="
+                background: url(./images/61f281283d54b1643282728.jpg) bottom
+                    left;
+            ">
+            <div class="account-wrapper sign-up">
+                <div class="account-form-wrapper">
+                    <div class="account-header">
+                        <div class="left-content">
+                            <div class="logo mb-4">
+                                <a href="index.php"
+                                    ><img
+                                        src="/Book My Bus(Frontend)/User-Side/images/Book_My_Bus_Logo.png"
+                                        alt="Logo"
+                                /></a>
+                            </div>
+                            <h3 class="title">Welcome to Bus Booking</h3>
+                            <span>Sign Up your Account</span>
+                        </div>
+                    </div>
+                    <form
+                        class="account-form row"
+                        method="POST"
+                        id="add_form"
+                        name="add_form">
+                        <div class="adjust">
+                            <div class="form_element">
+                                <div class="FirstName">
+                                    <div class="form--group">
+                                        <label for="name"
+                                            >First Name <span>*</span></label
+                                        >
+                                        <input
+                                            id="firstname"
+                                            type="text"
+                                            class="form--control"
+                                            name="name"
+                                            value=""
+                                            placeholder="Enter Your FirstName"
+                                            required="" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form_element">
+                                <div class="LastName">
+                                    <div class="form--group">
+                                        <label for="name">Last Name</label>
+                                        <input
+                                            id="lastname"
+                                            type="text"
+                                            class="form--control"
+                                            name="name"
+                                            value=""
+                                            placeholder="Enter Your LastName"
+                                            required="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="adjust">
+                            <div class="form_element">
+                                <div class="form--group">
+                                    <label for="mobile"
+                                        >Mobile <span>*</span></label
+                                    >
+                                    <input
+                                        type="number"
+                                        name="mobile"
+                                        id="mobile"
+                                        value=""
+                                        class="form--control ps-2 checkUser"
+                                        placeholder="Your Mobile Number" />
+                                </div>
+                            </div>
+                            <div class="form_element">
+                                <div class="form--group">
+                                    <label for="email"
+                                        >Email <span>*</span></label
+                                    >
+                                    <input
+                                        id="email"
+                                        type="email"
+                                        class="form--control checkUser"
+                                        name="email"
+                                        value=""
+                                        placeholder="Enter Your Email"
+                                        required="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="adjust">
+                            <!-- <div class="form_element">
+                                <div class="form--group">
+                                    <label for="name"
+                                        >UserName <span>*</span></label
+                                    >
+                                    <input
+                                        id="username"
+                                        type="text"
+                                        class="form--control"
+                                        name="name"
+                                        value=""
+                                        placeholder="Enter UserName"
+                                        required="" />
+                                </div>
+                            </div> -->
+                            <div class="form_element">
+                                <div class="form--group">
+                                    <label for="password"
+                                        >Password <span>*</span></label
+                                    >
+                                    <input
+                                        id="password"
+                                        type="password"
+                                        class="form--control"
+                                        name="password"
+                                        placeholder="Enter Your Password"
+                                        required="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_element">
+                            <div class="form--group custom--checkbox">
+                                <input
+                                    type="checkbox"
+                                    name="agree"
+                                    id="agree" />
+                                <label for="agree"
+                                    >Accepting all
+                                    <a href="" target="_blank"
+                                        >terms &amp; conditions</a
+                                    >&nbsp;</label
+                                >
+                            </div>
+                            <div class="btn">
+                                <div class="form--group">
+                                    <button
+                                        class="account-button w-100"
+                                        type="button"
+                                        onclick="add_row()">
+                                        Sign Up
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="btn">
+                                <div class="account-page-link">
+                                    <p>
+                                        Already have an Account?
+                                        <a href="./login.html">Sign In</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Account Section Ends Here -->
+    </body>
+    <script src="./scripts/signup.js"></script>
+</html>

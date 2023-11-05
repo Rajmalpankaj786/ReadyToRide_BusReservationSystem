@@ -1,0 +1,426 @@
+:root {
+  --main-color: #0e9e4d;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  overflow-x:hidden;
+}
+/* Css for Home Content */
+/* Apply sticky behavior to the navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 1000; /* Ensure navbar is on top */
+}
+
+
+.home-container{
+  background: url('../images/Home_page_banner.png') repeat-x bottom;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 500px;
+  display: flex;
+  margin-top: 2px;
+}
+
+.home-container {
+  position: relative; /* Add this to establish a positioning context for the absolute-positioned bus */
+}
+
+.moving-bus {
+  background: url('../images/Bus.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  bottom: -75px;
+  right: 0;
+  animation: moveBus 12s linear infinite;
+  transform-origin: bottom right; /* Adjust the transform origin for the animation*/ 
+}
+.moving-bus-sticky {
+  bottom: 70px;
+}
+
+@keyframes moveBus {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100% + 200px)); /* Adjust this value based on the container's width */
+  }
+}
+
+.home-tagline-and-button{
+  display: block;
+  margin-top: 100px;
+  margin-left: 9%;
+}
+
+.home-tagline-and-button > h1{
+  font-size: 38px;
+}
+.home-tagline-and-button > button{
+  background-color: #0E9E4D;
+  color: white;
+  padding: 10px;
+  width: 160px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.home-tagline-and-button > button:hover{
+  background-color:rgba(68, 28, 189, 0.762);
+}
+
+/* Animation For Moving Bus */
+@keyframes moveBus {
+  0%{
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+  }
+  50%{
+    transform: translateX(-50vw) translateY(0px) rotate(0deg);
+  }
+  100%{
+    transform: translateX(-100vw) translateY(0px) rotate(0deg);
+  }
+}
+
+
+/* Home Booking Criteria*/
+.home-booking-criteria{
+  display: block;
+  margin: auto;
+  width: 90%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.hbc-heading{
+  margin: auto;
+  padding: 10px;
+}
+
+.hbc-heading > h1{
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hbc-heading > p{
+  width: 48%;
+  margin: auto;
+  line-height: 26px;
+  text-align: center;
+}
+
+.hbc-containers{
+  width: 85%;
+  margin: auto;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.hbc-containers > div{
+ width: 85%;
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ padding: 20px 30px;
+ border-radius: 5px;
+}
+.hbc-containers > div:hover{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.hbc-containers > div > img{
+  width: 40%;
+  display: block;
+  margin: auto;
+  margin-bottom: -5px;
+}
+.hbc-containers > div > h2, .hbc-containers > div > p{
+  text-align: center;
+  line-height: 26px;
+}
+.hbc-containers > div > p{
+  font-size: 16px;
+}
+
+#profileImg{
+  width: 25px;
+  height: 25px;
+  margin-right: -10px;
+}
+#profileImg>img{
+  width: 100%;
+  height:100%;
+  border-radius: 50%;
+}
+.slider-container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: auto;
+  gap: 40px;
+  width: 90%;
+  padding: 10px;
+  transition: transform 5s ease; /* Smooth transition for sliding effect */
+  overflow: hidden;
+  justify-items: center;
+  align-items: center;
+}
+
+.box {
+  padding: 20px;
+  width: 10vw;
+  height: 120px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #ffffff;
+  text-align: center;
+  transition: box-shadow 0.3s, border-color 0.3s;
+  border-radius: 5px;
+  color: rgb(162, 161, 161);
+}
+
+.box > div {
+  display: block;
+}
+
+.amenity > i {
+  font-size: 48px;
+}
+
+.amenity > h2 {
+  font-size: 22px;
+}
+
+.box:hover {
+  box-shadow: rgba(14, 158, 77, 0.24) 0px 3px 8px; /* Box-shadow on hover */
+  border-color: rgba(68, 28, 189, 0.762); /* Box border color on hover */
+}
+
+.box:hover .amenity {
+  color:rgba(68, 28, 189, 0.762); /* Change content color inside the box on hover */
+}
+
+.amenity {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Media query for screen size less than 800px */
+@media (max-width: 800px) {
+  .slider {
+    grid-template-columns: repeat(3, 1fr)
+  }
+  .box{
+    width: 20vh;
+  }
+}
+
+/* Media query for screen size less than 450px */
+@media (max-width: 450px) {
+  .slider {
+    grid-template-columns: repeat(1, 1fr)
+  }
+}
+
+
+/* Media Query for Small and Medium Screens */
+@media screen and (max-width: 800px) {
+
+/* Responsive code for moving bus */
+.moving-bus{
+  background: url('/User-Side/images/Bus.png');
+  background-repeat: no-repeat;
+  right: 0;
+  bottom: 85px;
+  width: 200px;
+  height: 75px;
+  position: absolute; 
+  animation: moveBus 6s linear infinite;
+}
+.moving-bus-sticky{
+  bottom: 160px;
+}
+@keyframes moveBus {
+  0%{
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateX(-50vw);
+  }
+  100%{
+    transform: translateX(-100vw);
+  } 
+  }
+  
+  .social-icons{
+    display: flex;
+  }
+  
+  .widget-title{
+    width: 10%;
+  }
+  .widget-title{
+    color: rgba(68, 28, 189, 0.762);
+  }
+  .footer-top{
+   padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color:rgba(27, 39, 61, 0.99);
+  }
+  @media screen and (min-width: 480px ) and (max-width: 999px ) {
+    .gy-4{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .col-md-4 {
+  
+      width: 60%;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    .col-xl-4{
+      width: 80%;
+      margin-right: 15%;
+    }
+    .footer-widget>h4{
+      text-decoration: underline;
+      width:100%;
+    
+      position: relative;
+      margin-left: 17%;
+    }
+    .footer-logo>img{
+      width: 59%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .footer-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .col-xl-4, .col-lg-3, .col-md-4, .col-sm-6 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footer-logo> img {
+      width: 100%;
+    }
+  
+    .footer-widget > h4 {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .footer-widget > h4::after {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20%;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  
+    .widget-title {
+      width: 100%;
+    }
+  }
+
+  #profileImg{
+    width: 25px;
+    height: 25px;
+    margin-right: -10px;
+  }
+  #profileImg>img{
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+  }
+  
+  .hbc-containers{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+.slider{
+  justify-content: center;
+}
+
+/* Styling for the custom toast notification */
+.custom-toast {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+/* /Custome alert// */
+
+/* Custom alert dialog styles */
+.custom-alert {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.custom-alert-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  margin-top: 10px;
+ 
+}
+
+button {
+  height: 50px;
+  padding: 13px 30px;
+  cursor: pointer;
+  background: var(--main-color);
+  color: #fff;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 5px;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  line-height: 1;
+}
+.rating{
+  border-radius: 1px solid blue;
+}
