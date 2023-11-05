@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus List - Admin Dashboard</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Include custom CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Include custom CSS -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-wOJyo+gUKDgjFhfSkZUE1L5N9Z9n4pM0ZI7wD7pJblCaa1Q0vyenKwp/AwFp/5ucHhBO1u3lshUWBE1ZLM9zg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <!-- Include SweetAlert2 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="./styles/bus.css" />
+  <!-- Include SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 sidebar">
+        <div class="logo">
+          <img src="../User-Side/images/Book_My_Bus_Logo.png"
+            alt="Website Logo">
+        </div>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link " href="./Admin_Home.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Admin_User_Deatils.html">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./bus.html">Buses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./AddBus.html">Add New Buses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./route.html">Routes</a>
+          </li>
+          <li class="nav-item">
+            <a id="logout" class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-9 content">
+        <h1>Bus List</h1>
+        <table class="table table-striped table-bordered" id="busTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Bus Name</th>
+              <th>Driver Name</th>
+              <th>Bus Type</th>
+              <th>Route From</th>
+              <th>Route To</th>
+              <th>Arrival Time</th>
+              <th>Departure Time</th>
+              <th>Seats</th>
+              <th>Available Seats</th>
+              <th>Photo</th>
+               <th>Edit</th>
+                        <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="Tbody">
+
+
+          
+
+
+            <!-- Add more rows for additional buses -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="scripts/Admin_Home.js"></script> -->
+  <script src="scripts/Bus.js"></script>
+  <script src="./scripts/logout.js"></script>
+</body>
+
+</html>

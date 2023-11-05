@@ -1,0 +1,109 @@
+/* styles.css */
+.container-fluid {
+  background-color: #cbc3d7;
+  height: 100%;
+  /* display: flex; */
+}
+
+.sidebar {
+  background-color: #574476;
+  padding: 20px;
+ min-height: 100%;
+ background-color: #574476;
+ padding: 20px;
+ min-height: 100vh; /* Set minimum height of sidebar to 100% viewport height */
+ flex: 0 0 25%; /* Set the sidebar to occupy 25% of the container width */
+ display: flex;
+ flex-direction: column;
+}
+
+.sidebar .nav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+}
+.logo img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  background-color: #edeaf1;
+
+}
+#sidebar1{
+  position: sticky;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+.sidebar ul.nav {
+  padding-left: 0;
+}
+
+.sidebar .nav-link {
+  color: white; /* Change navigation link color to white for better contrast */
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #9B75D3; /* Use a complementary color for the hover background */
+  color: rgba(5, 5, 5, 0.925);
+}
+
+.content {
+  padding: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #A393D5; /* Use a lighter shade of purple for the cards */
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+.active{
+  background-color: #3C0B26;
+  color: white;
+}
+
+.month_Chart {
+  margin-top: 30px;
+  text-align: center; /* Center the chart horizontally */
+}
+
+#myChart {
+  max-width: 100%; /* Set the chart's max-width to 100% */
+  height: 300px;
+  margin: 0 auto; /* Center the chart horizontally */
+}
+
+.ui-widgets {
+  position: relative;
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 9rem;
+  margin: 1.5rem;
+  border: 1.2rem solid #3C0B26; /* Use a dark shade of purple for the progress bars' border */
+  box-shadow: inset 0 0 7px grey;
+  border-left-color: #DC3545;
+  border-top-color: #DC3545;
+  border-right-color: #DC3545;
+  border-bottom-color: white;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ... Your other CSS rules ... */
