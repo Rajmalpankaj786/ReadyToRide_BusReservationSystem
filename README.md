@@ -1,7 +1,7 @@
 # 🚌🎫 ReadyToRide Bus Reservation System Portal
 
 <p align="center">
- <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Delicious+Handrawn&weight=100&size=53&pause=1000&color=rgb(117,87,184)&center=true&vCenter=true&width=605&height=118&lines=Ready+To+Ride" alt="Typing SVG" /></a>
+ <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Delicious+Handrawn&weight=100&size=53&pause=1000&color=purpale&center=true&vCenter=true&width=605&height=118&lines=Ready+To+Ride" alt="Typing SVG" /></a>
 <img src="FrontEnd/AssetsIndexPage/Shop.png"/>
 </p>
 
