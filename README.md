@@ -17,6 +17,15 @@
 <br>
 Welcome to the Bus Reservation System Portal! This project aims to simplify travel by allowing users to search, select, and reserve bus tickets seamlessly, making their journey easy and convenient.
 
+## Features
+
+- Search for available bus routes and schedules.
+- Select preferred seats and view seating arrangements.
+- Reservation and give Feedback on bus tickets securely.
+- User-friendly and intuitive interface for a seamless booking experience.
+- Real-time updates on bus availability and ticket status.
+- Customizable settings for user preferences.
+
 ### <h2 style="margin-top:100px ;"><i>👨🏻‍💻 Tech Stack & Languages used</i></h2>
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -76,23 +85,23 @@ https://localhost:8080/
 ```
 
 ```
-http://localhost:8888/swagger-ui/index.html
+http://localhost:8080/swagger-ui/index.html#/
 ```
 
 ## Modules
-- Product Module
-- Customer Module
-- Category Module
-- Order Module
-- Order-Bill Module
-- Cart Module
+- Admin Module
+- User Module
+- Route Module
+- Bus Module
+- Reservation Module
+- Feedback Module
 
 
 ## Getting Started
 
 1. Clone the repository using the command:
    ```
-   https://github.com/Rups1507/nippy-flavor-9468
+   https://github.com/Rajmalpankaj786/ReadyToRide_BusReservationSystem.git
    ```
 
 2. Compile and run the Java application to launch the console-based shopping platform.
@@ -110,27 +119,8 @@ This project is licensed under the MIT License. Refer to the [LICENSE](LICENSE) 
 
 ---
 
-For any inquiries or feedback, contact us at [contact@sweethoneydukes.com](mailto:contact@sweethoneydukes.com). Embark on your shopping journey with Sweet Honeydukes today!
-## Table of Contents
+For any inquiries or feedback, contact us at [contact@readyToride.com](mailto:contact@readyToride.com). Embark on your bus journey with readyToride today!
 
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
-## Features
 
-- Search for available bus routes and schedules.
-- Select preferred seats and view seating arrangements.
-- Reservation and give Feedback on bus tickets securely.
-- User-friendly and intuitive interface for a seamless booking experience.
-- Real-time updates on bus availability and ticket status.
-- Customizable settings for user preferences.
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Rajmalpankaj786/ReadyToRide_BusReservationSystem.git
 
