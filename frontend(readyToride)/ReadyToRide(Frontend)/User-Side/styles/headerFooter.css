@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+  
+/* ------------------------------------------------- Css For Navbar ----------------------------------------------- */
+.navbar {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, #0E9E4D 0px 2px 6px -2px;
+  max-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8%;
+  border: 1px solid rgba(68, 28, 189, 0.762);
+  font-size: 16px;
+}
+
+.logo img {
+  max-height: 70px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.menu > ul > li {
+  margin: 0 15px;
+}
+
+.menu > ul > li > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu li a:hover {
+  color: rgba(68, 28, 189, 0.762);
+}
+
+.dropdown > ul > li{
+  margin: 0px 0px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: whitesmoke;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  visibility: hidden;
+}
+
+.dropdown-content a{
+  color: black;
+  padding: 10px 10px;
+  width: 120px;
+  text-decoration: none;
+  display: block;
+  margin-left: -40px;
+}
+
+.dropdown-content > li > a:hover{
+  background-color: rgba(68, 28, 189, 0.762);
+  color: white;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  visibility: visible;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #000;
+  margin-bottom: 5px;
+  transition: background-color 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 84%;
+  padding: 10px 8%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, #0E9E4D 0px 2px 6px -2px;
+  z-index: 100;
+}
+
+@media screen and (max-width: 800px) {
+      /* Navbar */
+.logo img {
+    max-height: 50px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -120%; /* Hide the menu off-screen initially */
+    width: 100%;
+    height: 100%;
+    background-color:rgba(68, 28, 189, 0.762);
+    transition: right 0.3s;
+    z-index: 1;
+    margin-top: 75px;
+    width: 40%;
+    height: 500px;
+    transition: 0.8s;
+  }
+
+.menu.open {
+  display: flex;
+  flex-direction: column;
+  right: 0;
+}
+
+.menu ul{
+    display: block;
+    padding-left: 0;
+}
+
+.menu ul > li{
+    margin: 0 0;
+}
+
+.menu > ul > li > a {
+    color: white;   
+    display: block;
+    padding: 10px;
+}
+
+.menu > ul > li > a:hover{
+    color: black;
+    background-color: white;
+}
+.dropdown-content a{
+    margin-left: 0;
+}
+.dropdown-content > li > a:hover{
+    background-color: white;
+    color:rgba(68, 28, 189, 0.762);
+  }
+.hamburger {
+  display: block;
+}
+
+.navbar.responsive .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar.responsive  {
+  display: flex;
+  flex-direction: column; /* Change to column to display vertically when open */
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(68, 28, 189, 0.762);
+  padding: 15px 10px;
+}
+
+.navbar.responsive .menu li {
+  margin: 10px 0; /* Add margin between menu items */
+}
+
+.navbar.responsive .menu a {
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar.responsive .account {
+  order: -1;
+}
+}
+
+/* ------------------------------------------End OF Navbar --------------------------------------------------------- */
+
+
+/* ------------------------------------------ Css For Footer ------------------------------------------------------ */
+.footer-logo>img{
+    width: 45%;
+  }
+  .footer-widget>ul>li>a:hover {
+    color: rgba(68, 28, 189, 0.762);
+  }
+  li{
+    list-style: none;
+  }
+  .footer-widget>ul>li>a{
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: white;
+  }
+  .footer-widget>h4{
+    text-decoration: underline;
+    width:50%;
+  
+    position: relative;
+    margin-left: 17%;
+  }
+  .footer-widget>h4::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 40%;
+    height: 1px;
+    background-color:rgba(68, 28, 189, 0.762);
+  }
+  
+  .col-md-4 {
+  
+    width: 20%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .col-xl-4{
+    width: 30%;
+    margin-right: 15%;
+  }
+  
+  .footer-wrapper{
+    display: flex;
+  
+    color: white;
+  }
+  .social-icons>li{
+    margin-left: 20px;
+    
+  }
+  
+  .social-icons{
+    display: flex;
+  }
+  
+  .widget-title{
+    width: 10%;
+  }
+  .widget-title{
+    color: rgba(68, 28, 189, 0.762);
+  }
+  .footer-top{
+   padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color:rgba(27, 39, 61, 0.99);
+  }
+  @media screen and (min-width: 480px ) and (max-width: 999px ) {
+    .gy-4{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .col-md-4 {
+  
+      width: 60%;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    .col-xl-4{
+      width: 80%;
+      margin-right: 15%;
+    }
+    .footer-widget>h4{
+      text-decoration: underline;
+      width:100%;
+    
+      position: relative;
+      margin-left: 17%;
+    }
+    .footer-logo>img{
+      width: 59%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .footer-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .col-xl-4, .col-lg-3, .col-md-4, .col-sm-6 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footer-logo> img {
+      width: 100%;
+    }
+  
+    .footer-widget > h4 {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .footer-widget > h4::after {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20%;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  
+    .widget-title {
+      width: 100%;
+    }
+  }

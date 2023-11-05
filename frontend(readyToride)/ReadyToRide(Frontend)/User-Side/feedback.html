@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../User-Side/styles/login.css">
+    <link rel="stylesheet" href="./styles/feedback.css">
+
+</head>
+
+<body>
+    <!-- The custom alert dialog -->
+    <div class="custom-alert" id="customAlert">
+        <div class="custom-alert-content">
+            <p id="customAlertMessage"></p>
+            <button onclick="closeCustomAlert()">OK</button>
+        </div>
+    </div>
+
+    <div id="customToastContainer"></div>
+    <!-- Account Section Starts Here -->
+    <section class="account-section bg_img" style="background: url(../User-Side/images/61f281283d54b1643282728.jpg) bottom left; ">
+        <div class="account-wrapper  sign-up">
+            <div class="account-form-wrapper">
+                <div class="account-header">
+                    <div class="left-content">
+                        <div class="logo mb-4">
+                            <a href="index.php"><img src="../User-Side/images/logo1-removebg-new.png" alt="Logo"></a>
+                        </div>
+                        <h3 class="title">Hello <span id="feedusername"></span></h3>
+                        <span>We Appericiate Your Feedback</span>
+                    </div>
+                </div>
+                <form class="account-form row" method="POST" id="add_form" name="add_form">
+                    <div class="form_element">
+                        <div class="form--group">
+                            <label for="driverRating">Driver Rating <span>(1-10):</span></label>
+                            <input id="driver" type="number" class="rating" name="driverRating" min="1" max="10" required>
+                             </div>
+                    </div>
+                    <div class="form_element">
+                        <div class="form--group">
+                            <label for="serviceRating">Service Rating  <span>(1-10):</span></label>
+                            <input id="service" type="number" class="rating"  name="serviceRating" min="1" max="10" required>
+                           </div>
+                    </div>
+                    <div class="form_element">
+                        <div class="form--group">
+                            <label for="overallRating">Overall Rating  <span>(1-10):</span></label>
+                            <input id="overall" type="number" class="rating" name="overallRating" min="1" max="10" required>
+                        </div>
+                    </div>
+                    <div class="form_element">
+                        <div class="form--group">
+                            <label for="comments">Comments:</label>
+                            <textarea id="comment" name="comments" class="rating" rows="5" column="40" spellcheck="false" ></textarea> </div>
+                    </div>
+                    <div class="form_element">
+                        <div class="btn">
+                            <div class="form--group">
+                                <button class="account-button w-100" type="button" onclick="addFeedback()">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Account Section Ends Here -->
+</body>
+<script src="./scripts/feedback.js"></script>
+
+</html>
