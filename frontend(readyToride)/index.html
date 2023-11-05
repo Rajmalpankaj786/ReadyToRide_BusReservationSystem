@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Css from FontAwesome for Amenities -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Website External Css Link -->
+  <link rel="stylesheet" href="./Book My Bus(Frontend)/User-Side/styles/index.css">
+
+  <!-- Css For Footer -->
+  <link rel="stylesheet" href="./Book My Bus(Frontend)/User-Side/styles/headerFooter.css">
+  <title>Home -Book My Bus</title>
+</head>
+<body>
+     <!-- The custom alert dialog -->
+     <div class="custom-alert" id="customAlert">
+      <div class="custom-alert-content">
+          <p id="customAlertMessage"></p>
+          <button onclick="closeCustomAlert()">OK</button>
+      </div>
+  </div>
+
+  <div id="customToastContainer"></div>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="./User-Side/images/Book_My_Bus_Logo.png" alt="">
+    </div>
+    <div class="menu" id="menu">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Services</a>
+          <ul class="dropdown-content dropdown-toggle">
+            <li><a href="./Book My Bus(Frontend)/User-Side/bookTicket.html">Book a Ticket</a></li>
+            <li><a href="./Book My Bus(Frontend)/User-Side/bookTicket.html">Find Bus</a></li>
+            <li><a href="./Book My Bus(Frontend)/User-Side/ticketStatus.html">Ticket Status</a></li>
+            <li><a href="./Book My Bus(Frontend)/User-Side/cancelTicket.html">Cancel Ticket</a></li>
+            <li><a href="./Book My Bus(Frontend)/User-Side/feedback.html">Add Feedback</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li id="profileImg"><img src="./Book My Bus(Frontend)/User-Side/images/images.jpeg" alt=""></li>
+        <li><a  href="./Book My Bus(Frontend)/User-Side/login.html" id="account">Account</a></li>
+        <li id="logout"><div href="" style="border-radius: 5px; padding: 4px; background-color: #0E9E4D;color: white; cursor: pointer;" onclick="logoutUser()"
+          >Logout</div></li>
+      </ul>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="home-container">
+    <div class="home-tagline-and-button">
+      <h1>Get Your Ticket Online,<br>Easy And Safely</h1>
+      <button onclick = "window.location.href = './Book My Bus(Frontend)/User-Side/bookTicket.html';">Book Now &nbsp; &rarr;</button>
+    </div>
+    <div class="moving-bus" id="moving-bus"></div>
+  </div>
+  <div class="home-booking-criteria">
+    <div class="hbc-heading">
+      <h1>Get Your Tickets With Just 3 Steps</h1>
+      <p>We’ve partnered with the India’s most popular bus companies. Have a look at our popular reason. Why should choose you Book My Bus. Just a Bus and get a ticket for your great journey. !</p>
+    </div>
+    <div class="hbc-containers">
+      <div>
+        <img src="./Book My Bus(Frontend)/User-Side/images/hbc-1.png" alt="">
+        <h2>Search Your Bus</h2>
+        <p>Choose your Pickup, Destination, journey dates and search for lowest price bus Ticket around the India to make your travel budget friendly.</p>
+      </div>
+      <div>
+        <img src="./Book My Bus(Frontend)/User-Side/images/hbc-2.png" alt="">
+        <h2>Choose The Ticket</h2>
+        <p>BMB's smart filters, its range of bus schedule and fleet and amenities to make your comfortable travel journey.</p>
+      </div>
+      <div>
+        <img src="./Book My Bus(Frontend)/User-Side/images/hbc-3.png" alt="">
+        <h2>Easy Pay</h2>
+        <p>BMB ensures smooth payment experience for the users by making all wallet payment secure and quicker. Save money on your tickets.</p>
+      </div>
+    </div>
+  </div>
+  <div class="home-booking-criteria">
+    <div class="hbc-heading">
+      <h1>Our Amenities</h1>
+      <p>BMB's buses intend to provide a comfortable and safe travel experience and therefore the buses are well-equipped with all necessary and basic amenities to boost customer satisfaction. Passengers will have access to all required amenities on the bus.</p>
+    </div>
+    <div class="slider-container">
+      <div class="slider">
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <!-- footer -->
+      <div class="footer-top">
+          <div class="container">
+              <div class="row footer-wrapper gy-sm-5 gy-4">
+                  <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
+                      <div class="footer-widget">
+                          <div class="footer-logo">
+                              <img class="aei" src="./Book My Bus(Frontend)/User-Side/images/Book_My_Bus_Logo.png" alt="Logo">
+                          </div>
+                          <p>We make it possible for you to buy tickets with its large network of trustworthy bus partners ! <br>As humans, we have the urge to explore By travelling you can be closer to the people you love.!</p>
+                          <ul class="social-icons">
+                              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                              <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                      <div class="footer-widget">
+                          <h4 class="widget-title">Useful Links</h4>
+                          <ul class="footer-links">
+                              <li><a href="">About</a></li>
+                              <li><a href="">FAQs</a></li>
+                              <li><a href="">Blog</a></li>
+                              <li><a href="">Contact</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                      <div class="footer-widget">
+                          <h4 class="widget-title">Policies</h4>
+                          <ul class="footer-links">
+                              <li><a href="">Privacy Policy</a></li>
+                              <li><a href="">Terms and Conditions</a></li>
+                              <li><a href="">Ticket Policies</a></li>
+                              <li><a href="">Refund Policy</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                      <div class="footer-widget">
+                          <h4 class="widget-title">Contact Info</h4>
+                                                  <ul class="footer-contacts">
+                              <li>
+                                  <i class="las la-map-pin"></i> My Bus Office ,Kolkata</li>
+                              <li>
+                              <i class="las la-phone-volume"></i> <a href="">1234567890</a>
+                              </li>
+                              <li>
+                              <i class="las la-envelope"></i> <a href=""> <span class="_cf_email_" data-cfemail="">bookmybus.com</span></a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  <!-- End of Foote  -->
+
+  <!-- Java Script -->
+  <script type="text/javascript" src="./Book My Bus(Frontend)/User-Side/scripts/headerFooter.js" ></script>
+  <script type="text/javascript" src="./Book My Bus(Frontend)/User-Side/scripts/index.js" ></script>
+</body>
+</html>
