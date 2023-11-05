@@ -1,0 +1,51 @@
+/* styles.css */
+/* ... Other styles ... */
+
+.custom-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .custom-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .custom-form label {
+    font-weight: bold;
+  }
+  
+  .custom-form input[type="text"],
+  .custom-form select,
+  .custom-form input[type="time"],
+  .custom-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .custom-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .custom-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .sticky-header {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Add a background color if needed */
+    padding: 10px; /* Add padding for better visibility */
+    z-index: 1; /* Bring the header to the top layer */
+  }
