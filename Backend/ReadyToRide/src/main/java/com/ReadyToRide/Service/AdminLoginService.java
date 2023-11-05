@@ -23,7 +23,7 @@ public class AdminLoginService {
 	public CUSession logIntoAccount(AdminDto dto) throws LoginException {
 		// TODO Auto-generated method stub
 		Admin adm=new Admin();
-		if(!adm.username.equalsIgnoreCase(dto.getUsername())) {
+		if(!adm.username.equalsIgnoreCase(dto.getEmail())) {
 			throw new LoginException("Please Enter a valid Username");
 		}
 		Optional<CUSession> validUserSessionOpt =sRepo.findById(adm.id);
