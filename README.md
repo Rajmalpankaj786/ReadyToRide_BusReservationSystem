@@ -1,6 +1,5 @@
 # 🚌🎫 ReadyToRide Bus Reservation System Portal
 
-Welcome to the Bus Reservation System Portal! This project aims to simplify travel by allowing users to search, select, and reserve bus tickets seamlessly, making their journey easy and convenient.
 <p align="center">
  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Delicious+Handrawn&weight=100&size=53&pause=1000&color=rgb(117,87,184)&center=true&vCenter=true&width=605&height=118&lines=Ready+To+Ride" alt="Typing SVG" /></a>
 <img src="FrontEnd/AssetsIndexPage/Shop.png"/>
@@ -14,12 +13,8 @@ Welcome to the Bus Reservation System Portal! This project aims to simplify trav
 - [Sunny dev](https://github.com/Sunnysingh1231)
 - [Aman Choure](https://github.com/amanacr0358)
 
-
-
-
-
 <br>
-Sweet Honeydukes is a virtual store that specializes in selling a variety of sweets, candies, chocolates, and other confectionery items through an online platform. Customers can browse through a wide range of sweet treats from the comfort of their homes, choose their favorite items, and place an order online.
+Welcome to the Bus Reservation System Portal! This project aims to simplify travel by allowing users to search, select, and reserve bus tickets seamlessly, making their journey easy and convenient.
 
 ### <h2 style="margin-top:100px ;"><i>👨🏻‍💻 Tech Stack & Languages used</i></h2>
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
