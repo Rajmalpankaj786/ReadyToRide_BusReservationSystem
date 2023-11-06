@@ -83,13 +83,13 @@ Welcome to the Bus Reservation System Portal! This project aims to simplify trav
 <img src="/Images/sw1.jpeg"/>
 
 ## Feedback and Bus Controller
-![cart controller](readmephoto/cart-controller.PNG)
+<img src="/Images/sw2.jpeg"/>
 
 ## Reservation Controller
-![order controller](readmephoto/sweet-order-controller.PNG)
+<img src="/Images/sw3.jpeg"/>
 
 ## ER Diagram
-![ER diagram](<readmephoto/ER diagram sweet honeydukes.PNG>)
+<img src="/Images/Er.jpeg"/>
 ## API Root Endpoint
 
 ```
