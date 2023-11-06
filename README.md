@@ -3,7 +3,7 @@
 <p align="center">
  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Delicious+Handrawn&weight=100&size=53&pause=1000&color=purpale&center=true&vCenter=true&width=605&height=118&lines=Ready+To+Ride" alt="Typing SVG" /></a>
 <img src="Images
-/Book_My_Bus_Logo.jpg"/>
+/Book_My_Bus_Logo.jpeg"/>
 </p>
 
 
@@ -52,14 +52,30 @@ Welcome to the Bus Reservation System Portal! This project aims to simplify trav
 
 ## Landing Page
 ![Landing page](</Images/1.jpeg>)
-## Product Page
-![Product page](<readmephoto/Screenshot (215).png>)
-
-## Admin Page
-![admin page](<readmephoto/Screenshot (216).png>)
 
 ## login Page
-![login page](<readmephoto/Screenshot (1955).png>)
+![login page](</Images/2.jpeg>)
+
+## Service Page
+![Product page](</Images/3.jpeg>)
+
+## Booking Page
+![Product page](</Images/4.jpeg>)
+
+## Admin Dashboard
+![admin page](</Images/5.jpeg>)
+
+## Admin See List OF Users
+![admin page](</Images/6.jpeg>)
+
+## Admin See List OF Buses
+![admin page](</Images/7.jpeg>)
+
+## Admin Can add New Buses
+![admin page](</Images/8.jpeg>)
+
+## Admin Can Add New Routes
+![admin page](</Images/9.jpeg>)
 
 ## Category Controller
 <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-04-10/categoryController_679746.png"/>
