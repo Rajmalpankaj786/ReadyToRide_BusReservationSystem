@@ -79,20 +79,14 @@ Welcome to the Bus Reservation System Portal! This project aims to simplify trav
 ## Admin Can Add New Routes
 ![admin page](</Images/9.jpeg>)
 
-## Category Controller
-<img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-04-10/categoryController_679746.png"/>
+## User and Route Controller
+<img src="/Images/sw1.jpeg"/>
 
-## Cart Controller
+## Feedback and Bus Controller
 ![cart controller](readmephoto/cart-controller.PNG)
 
-## Order and Bill Controller
+## Reservation Controller
 ![order controller](readmephoto/sweet-order-controller.PNG)
-
-## Customer Controller
-![customer controller](readmephoto/customer-controller.PNG)
-
-## Product Controller
-![product controller](readmephoto/sweet-item-controller.PNG)
 
 ## ER Diagram
 ![ER diagram](<readmephoto/ER diagram sweet honeydukes.PNG>)
