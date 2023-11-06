@@ -51,7 +51,7 @@ Welcome to the Bus Reservation System Portal! This project aims to simplify trav
 
 
 ## Landing Page
-![Landing page](<readmephoto/Screenshot (1954).png>)
+![Landing page](</Images/1.jpeg>)
 ## Product Page
 ![Product page](<readmephoto/Screenshot (215).png>)
 
