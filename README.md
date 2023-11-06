@@ -89,7 +89,7 @@ Welcome to the Bus Reservation System Portal! This project aims to simplify trav
 <img src="/Images/sw3.jpeg"/>
 
 ## ER Diagram
-<img src="/Images/Er.jpeg"/>
+<img src="/Images/Er.png"/>
 ## API Root Endpoint
 
 ```
@@ -115,24 +115,23 @@ http://localhost:8080/swagger-ui/index.html#/
    ```
    https://github.com/Rajmalpankaj786/ReadyToRide_BusReservationSystem.git
    ```
-2.Open MySQL Create the new Database and Create application.yml file: 
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    password: rajmal
-    url: jdbc:mysql://localhost:3306/bus_reservation_database
-    username: root
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-
+2.Open MySQL Create the new Database and Create application.yml file: <br></br>
+spring:<br></br>
+  datasource:<br></br>
+    driver-class-name: com.mysql.cj.jdbc.Driver<br></br>
+    password: rajmal<br></br>
+    url: jdbc:mysql://localhost:3306/bus_reservation_database<br></br>
+    username: root<br></br>
+  jpa:<br></br>
+    hibernate:<br></br>
+      ddl-auto: update<br></br>
+    show-sql: true <br></br>
  
 2. Compile and run the Java application to launch the console-based shopping platform.
 
 ## Deployed Link
 
-https://651f9ea861aed36035486cfb--sage-taffy-0f4227.netlify.app/
+https://aquamarine-puffpuff-baa03a.netlify.app/
 ## Contributions
 
 We welcome contributions! Feel free to fork the repository, enhance functionalities, and submit pull requests.
