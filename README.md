@@ -131,7 +131,7 @@ spring:<br></br>
 
 ## Deployed Link
 
-https://aquamarine-puffpuff-baa03a.netlify.app/
+https://65848c96215c8c312d6c9c3f--ubiquitous-pudding-c58264.netlify.app/
 ## Contributions
 
 We welcome contributions! Feel free to fork the repository, enhance functionalities, and submit pull requests.
