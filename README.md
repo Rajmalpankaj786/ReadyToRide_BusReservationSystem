@@ -23,10 +23,10 @@ Welcome to the Bus Reservation System Portal! This project aims to simplify trav
 
 - Search for available bus routes and schedules.
 - Select preferred seats and view seating arrangements.
-- Reservation and give Feedback on bus tickets securely.
-- User-friendly and intuitive interface for a seamless booking experience.
-- Real-time updates on bus availability and ticket status.
-- Customizable settings for user preferences.
+- Reserve bus tickets securely and provide feedback.
+- Enjoy a user-friendly and intuitive interface for a seamless booking experience.
+- Receive real-time updates on bus availability and ticket status.
+- Customize settings according to user preferences.
 
 ### <h2 style="margin-top:100px ;"><i>👨🏻‍💻 Tech Stack & Languages used</i></h2>
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -134,7 +134,7 @@ spring:<br></br>
 https://65848c96215c8c312d6c9c3f--ubiquitous-pudding-c58264.netlify.app/
 ## Contributions
 
-We welcome contributions! Feel free to fork the repository, enhance functionalities, and submit pull requests.
+We welcome contributions! Feel free to fork the repository, enhance its functionality, and submit pull requests.
 
 ## License
 
@@ -142,7 +142,7 @@ This project is licensed under the MIT License. Refer to the [LICENSE](LICENSE) 
 
 ---
 
-For any inquiries or feedback, contact us at [contact@readyToride.com](mailto:contact@readyToride.com). Embark on your bus journey with readyToride today!
+For any inquiries or feedback, feel free to contact us at contact@readyToride.com. Start your bus journey with ReadyToRide today!
 
 
 
