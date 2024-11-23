@@ -17,7 +17,8 @@
 - [Aman Choure](https://github.com/amanacr0358)
 
 <br>
-Welcome to the Bus Reservation System Portal! This project aims to simplify travel by allowing users to search, select, and reserve bus tickets seamlessly, making their journey easy and convenient.
+Welcome to the Bus Reservation System Portal! This project aims to simplify travel by enabling users to search for, select, and reserve bus tickets seamlessly, ensuring their journey is easy and convenient.
+
 
 ## Features
 
